@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Specific Static</title>
+    {% block title %}
+    <title>Sample Specific</title>
+    {% endblock %}
 </head>
 <body>
+    <h1>Welcome</h1>
+    {% block body_block %}
+    <p>Saravanan Subramanian</p>
+    {% endblock body_block %}
     <h1>Hi this is Saravanan</h1>
 </body>
 </html>
